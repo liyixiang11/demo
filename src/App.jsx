@@ -12,11 +12,11 @@ class App extends Component {
   render() {
     let {name,age} = this.state
     return (
-      <div>
+      <nav>
           <Add text={this.nameValue.bind(this)}></Add>
           <hr/>
           <List people={this.state.people}></List>
-      </div>
+      </nav>
     );
   }
   nameValue(value,age){
